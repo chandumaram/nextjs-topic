@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -30,4 +30,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+a {
+  @apply underline text-blue-500;
+}
+
+button {
+  @apply py-2 px-5 bg-blue-500 text-white rounded-lg;
 }
